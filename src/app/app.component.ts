@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  title = 'myStore'
   name = 'Nicolas';
   // El acceso debe ser publico, viene publico por defecto
   age = 18;
@@ -25,5 +26,15 @@ export class AppComponent {
   }
   increaseAge(){
     this.person.age += 1;
+  }
+
+  onScroll(event: Event){
+      const element = event.target as HTMLElement;
+      console.log(element.scrollTop);
+  }
+
+  changeName(event: Event){
+    const element = event.target as HTMLInputElement;
+    this.person.name= element.value;
   }
 }
