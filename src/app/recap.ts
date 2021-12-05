@@ -7,3 +7,23 @@ const sum = (a: number,b: number) => {
 }
 
 sum(1,3);
+
+class Person {
+  age: number;
+  lastName: string;
+
+  constructor(age: number,lastName: string){
+    this.age = age;
+    this.lastName = lastName;
+  }
+
+
+
+}
+
+class Person2 {
+  constructor(public age: number,public lastName: string){ }
+}
+
+const nico = new Person(15,'Molina');
+nico.age;
