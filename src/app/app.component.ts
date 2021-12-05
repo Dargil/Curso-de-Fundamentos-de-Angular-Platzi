@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-store';
+  name = 'Nicolas';
+  // El acceso debe ser publico, viene publico por defecto
+  age = 18;
+  img = 'https://static.bandainamcoent.eu/high/naruto/naruto-suns-revolution/00-page-setup/nsr_game-thumbnail.jpg';
 }
